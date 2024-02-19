@@ -55,7 +55,10 @@ fun AirbnbCloneTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = AirbnbCloneTypography,
         content = content
     )
 }
+
+val MaterialTheme.spacing: Spacing
+    get() = Spacing
