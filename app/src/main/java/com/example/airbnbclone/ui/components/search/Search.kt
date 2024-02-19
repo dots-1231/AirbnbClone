@@ -39,29 +39,31 @@ fun Search(
             ) {
                 Icon(
                     modifier = Modifier.padding(
-                        end = MaterialTheme.spacing.small,
+                        end = MaterialTheme.spacing.small4,
                     ),
                     imageVector = searchIcon,
                     contentDescription = "search icon"
                 )
                 Column {
-                    Text(text = title, style = MaterialTheme.typography.labelSmall)
-                    Row {
+                    Text(text = title, style = MaterialTheme.typography.labelMedium)
+                    Row(
+                        modifier = Modifier.padding(top = MaterialTheme.spacing.small2)
+                    ) {
                         Text(
                             modifier = Modifier
-                                .padding(end = MaterialTheme.spacing.small),
+                                .padding(end = MaterialTheme.spacing.small4),
                             text = location,
                             style = MaterialTheme.typography.labelSmall.light
                         )
                         Text(
                             modifier = Modifier
-                                .padding(end = MaterialTheme.spacing.small),
+                                .padding(end = MaterialTheme.spacing.small4),
                             text = dates,
                             style = MaterialTheme.typography.labelSmall.light
                         )
                         Text(
                             modifier = Modifier
-                                .padding(end = MaterialTheme.spacing.small),
+                                .padding(end = MaterialTheme.spacing.small4),
                             text = guests,
                             style = MaterialTheme.typography.labelSmall.light
                         )
